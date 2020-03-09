@@ -5,5 +5,6 @@ public class Test01 {
 		System.out.println("Hello Lava!!");
 		// ==> println() 함수(method) - 콘솔창에 내용을 출력해주는 기능을 가진 함수
 		// 이클립스에서 자바클래스 실행하기 - ctrl + shift + F11
+		
 	}
 }
