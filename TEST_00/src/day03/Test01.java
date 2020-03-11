@@ -132,7 +132,7 @@ public class Test01 {
 			no2 = tmp;
 			cha = no1 - no2;
 		} else {
-			cha = no2 - no1;
+			cha = no1 - no2;
 		}
 		/*
 		 	심화문제]
