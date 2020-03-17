@@ -1,4 +1,4 @@
-package day07;
+package day07.solv;
 
 /*
 	¹®Á¦ 8]
