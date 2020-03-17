@@ -10,21 +10,21 @@ package day04;
 public class Hw04 {
 
 	public static void main(String[] args) {
-		double p1 = 0.54;
-		double p2 = 1.07;
-		
 		int mount = 7564;
-		double ex1 = 7564/p1;
-		double ex2 = 7564/p2;
 		
-		ti:
-		for(int j = mount; p2*j >= 0;j--) {
-			for(int i = 1; p1*i <= mount;i++) {
-				if(p2*j == p1*i) {
-					break ti;
-				}
+		for(int i = 0; ; i++) {
+			// 각 초당 올라가는 사람의 높이
+			double h1 = 0.54*i;
+			// 각 초당 내려가는 사람의 높이
+			double h2 = mount - 1.07*i;
+			
+			if(h1 > h2) {	// 올라가는 사람의 높이가 내려가는 사람 높이를 역전하는 순간
+				System.out.println("올라가는 사람의 높이 : " + h1);
+				System.out.println("내려가는 사람의 높이 : " + h2);
+				System.out.println
+				("두 사람이 만난 직후 시간 : " + (i/60) + "분 " + (i%60) + "초");
+				break;
 			}
-			System.out.println("초: " + j);
 		}
 
 	}
