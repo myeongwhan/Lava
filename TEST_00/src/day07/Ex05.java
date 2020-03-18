@@ -13,6 +13,17 @@ public class Ex05 {
 	public static void main(String[] args) {
 		String str = JOptionPane.showInputDialog("영문 입력: ");
 		
+		char ch[] = str.toCharArray();
+		
+		int cnt = 0;
+		for(int i=0; i<str.length(); i++) {
+			for(int j=0; j<str.length(); j++) {
+				if(ch[i] == ch[j]) {
+					cnt++;
+				}
+			}
+		}
+		
 		String bindo[] = new String[str.length()];
 		
 
