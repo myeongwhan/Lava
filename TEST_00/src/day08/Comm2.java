@@ -56,6 +56,10 @@ public class Comm2 {
 			
 		}
 		
+		int[][] bill = new int[8][6];
+		for(int i=0; i<8; i++) {
+			bill[i]=lotto;
+		}
 		int don = 8000;//JOptionPane.showInputDialog("금액입력: ");
 		int game = don/1000;
 		
@@ -63,7 +67,7 @@ public class Comm2 {
 			
 		}
 		JOptionPane.showMessageDialog(null,
-				"**당첨금액**\n" + Arrays.toString(lotto) + "\t " + game+"게임");
+				"**입력금액**\n" + Arrays.deepToString(bill) + "\t " + game+"게임");
 
 	}
 
